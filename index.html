@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Viewport optimizado para celular -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Menú</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: #ffffff;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Cada sección ocupa una pantalla */
+        section {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        section img {
+            width: 100%;
+            height: auto;
+            max-height: 100vh;
+            object-fit: contain;
+            display: block;
+        }
+
+        /* ESPACIO EXTRA SOLO EN LA SEGUNDA IMAGEN */
+        #atras {
+            padding-top: 20px; /* ajustá: 10px, 20px o 30px */
+        }
+
+        /* Botón flotante */
+        .btn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #000;
+            color: #fff;
+            padding: 12px 16px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-size: 14px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+        }
+
+        .btn:active {
+            transform: scale(0.95);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Página 1 -->
+    <section id="frente">
+        <img src="IMG/frente.png" alt="Menú frente">
+    </section>
+
+    <!-- Página 2 (con espacio arriba) -->
+    <section id="atras">
+        <img src="IMG/atras.png" alt="Menú atrás">
+    </section>
+
+    <!-- Botón flotante -->
+    <a href="#frente" class="btn">↑</a>
+
+</body>
+</html>
